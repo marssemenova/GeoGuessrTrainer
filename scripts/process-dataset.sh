@@ -8,13 +8,15 @@ for dir in "$data_dir"*/; do
   count=0
   for file in "$dir"*; do
     json_arr+='"'
-    json_arr+="$file"
+    file_split=(${file//// })
+    json_arr+="${file_split[-1]}"
     json_arr+='",\n'
     ((count++))
   done
   json_arr="${json_arr:0:-3}]"
   json+='{\n"country":"'
-  json+="$dir"
+  dir_split=(${dir//// })
+  json+="${dir_split[-1]}"
   json+='",\n"num_entries":'
   json+="$count"
   json+=',\n"entries":'
