@@ -5,4 +5,5 @@ node_modules
 dist
 .cache
 
-/data/images/*
+/data/*
+!/data/data-info.json

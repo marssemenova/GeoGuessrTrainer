@@ -1,9 +1,9 @@
 ﻿#!/bin/bash
 
-data_dir=""
+data_dir="../data/"
 out_file_path="../data/data-info.json"
 json="["
-for dir in ../data/images/*/; do
+for dir in "$data_dir"*/; do
   json_arr='['
   count=0
   for file in "$dir"*; do
