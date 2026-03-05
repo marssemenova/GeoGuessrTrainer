@@ -4,7 +4,7 @@
   --dark-purp: rgb(16 16 28/100%);
 }
 
-/* body styles */
+/* general styles */
 body {
   margin: 0;
   background: var(--purp);
@@ -15,11 +15,11 @@ body {
   color: white;
 }
 
+/* nav bar */
 .logo {
   display: flex;
 }
 
-/* nav bar */
 .logo a {
   color: white;
   font-weight: bold;
@@ -43,6 +43,7 @@ nav {
   font-weight: bold;
   background: var(--dark-purp);
   display: flex;
+  z-index:1;
 }
 
 nav ul {
@@ -91,4 +92,8 @@ nav ul li a {
   align-content: center;
   resize: horizontal;
   overflow: hidden;
+}
+
+.nav-shift {
+  transform: translate(0, 5rem);
 }

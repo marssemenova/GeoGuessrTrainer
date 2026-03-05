@@ -22,3 +22,12 @@ like this when you've done this:
 1. You will need to run a local server to display the webpage. There are many ways to do this but the suggested
 method is to use WAMP as this is what was used in development.
 2. The homepage will display TODO
+
+# Citations
+- Some assets taken from [GeoGuessr.com](https://www.geoguessr.com/)
+- [Futura PT Font Family](https://font.download/font/futura-pt)
+- [Favicon generator](https://realfavicongenerator.net/)
+
+## Icons
+- [Back arrow](https://www.flaticon.com/free-icon/back-arrow_3272525?related_id=3272680&origin=search)
+- [Next/prev arrow](https://www.flaticon.com/free-icon/back-arrow_11488614?term=left+arrow&page=1&position=41&origin=search&related_id=11488614)
