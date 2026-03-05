@@ -1,5 +1,5 @@
-# GeoGuessr Trainer - CSCI4166 Project
-###### April 2026
+# GeoGuessd - A GeoGuessr Trainer
+###### CSCI4166 Project Winter 2026
 
 TODO
 

@@ -1,0 +1,8 @@
+﻿/* map */
+.map {
+  background: white;
+  width: 80%;
+  margin: auto;
+  transform: translate(0, 5rem);
+  height: 40rem;
+}
