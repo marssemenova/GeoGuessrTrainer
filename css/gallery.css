@@ -13,6 +13,7 @@
   left: 3rem;
   top: 5rem;
   width: 3rem;
+  z-index:1;
 }
 
 #back-icon-link {
@@ -38,6 +39,10 @@
 
 .switch-arrow {
   width: 10%;
+}
+
+.switch-arrow:hover {
+  cursor: pointer;
 }
 
 #next-icon {

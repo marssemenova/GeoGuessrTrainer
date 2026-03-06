@@ -43,7 +43,7 @@ nav {
   font-weight: bold;
   background: var(--dark-purp);
   display: flex;
-  z-index:1;
+  z-index: 5;
 }
 
 nav ul {
@@ -90,7 +90,6 @@ nav ul li a {
 .menu {
   flex-grow: 1;
   align-content: center;
-  resize: horizontal;
   overflow: hidden;
 }
 
