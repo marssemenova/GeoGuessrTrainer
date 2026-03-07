@@ -66,4 +66,5 @@
 .gallery-img {
   flex: 1;
   width: 100%;
+  max-width: 300px;
 }

@@ -86,20 +86,26 @@ async function createMap() {
       )
       .style("stroke", "#fff")
       .style("stroke-width", "0.5px")
-      .attr("class", "country-path")
+      .attr("class", function (d) {
+        if (imgsMap.has(d.properties.name)) {
+          return "country-path";
+        }
+      })
       .on("mouseover", function (e, d) {
         if (imgsMap.has(d.properties.name)) {
           d3.select("#disp-grp-txt").text(d.properties.name + " - " + imgsMap.get(d.properties.name).length);
           d3.select("#disp-grp").style("display", "block");
           d3.select("#disp-grp-border").attr("width", document.getElementById("disp-grp-txt").getBBox().width + 30);
-        }
+        } 
       })
       .on("mouseout", function () {
         d3.select("#disp-grp")
           .style("display", "none");
       })
       .on("click", function (e, d) {
-        window.location.href="../pages/gallery.html?country=" + d.properties.name.replaceAll(" ", "%20");
+        if (imgsMap.has(d.properties.name)) {
+          window.location.href = "/GeoGuessd/pages/gallery.html?country=" + d.properties.name.replaceAll(" ", "%20");
+        }
       })
   })
 

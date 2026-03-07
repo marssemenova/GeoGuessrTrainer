@@ -10,7 +10,7 @@
 }
 
 
-#map path:hover {
+.country-path:hover {
   fill: red;
 }
 

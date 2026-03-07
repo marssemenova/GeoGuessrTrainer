@@ -1,5 +1,5 @@
 // vars
-let country = getUrlVars()["country"];
+let country = getUrlVars()["country"].replaceAll("%20", " ");
 let imgs = null;
 let viewerImg = document.getElementById("curr-img");
 let prevBtn = document.getElementById("prev-icon");
@@ -44,6 +44,9 @@ async function loadGallery() {
  */
 function createViewer() {
   // set first image
+  viewerImg = document.createElement("img");
+  document.getElementById("img-viewer").append(viewerImg);
+  viewerImg.id = "curr-img";
   viewerImg.src = imgsPath + country + "/" + imgs[curImg];
   viewerImg.alt = "Image of " + country + ".";
 
