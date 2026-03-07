@@ -1,6 +1,6 @@
 // global vars
 let dataInfoPath = "/../data/data-info.json";
-let imgsPath = "/../data/";
+let imgsPath = "/../data/images/";
 let dataset = null;
 let imgsMap = new Map();
 

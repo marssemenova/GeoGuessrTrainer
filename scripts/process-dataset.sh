@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-data_dir="../data/"
+data_dir="../data/images/"
 out_file_path="../data/data-info.json"
 json="["
 for dir in "$data_dir"*/; do

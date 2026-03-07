@@ -1,7 +1,19 @@
 ﻿/* map */
-#map {
-  background: white;
+#map-container {
   width: 80%;
   margin: auto;
-  height: 40rem;
+  height: 40vw;
+}
+
+#map-container svg {
+  background: white;
+}
+
+
+#map path:hover {
+  fill: red;
+}
+
+#disp-grp{
+  display: none;
 }
