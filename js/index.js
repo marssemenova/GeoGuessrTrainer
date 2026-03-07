@@ -2,6 +2,7 @@
 let mapContainer = document.getElementById("map-container");
 let mapSVGElement = null;
 let minImgCount = 0, maxImgCount = 0, avgImgCount = 0;
+let mapInfoFile = "/GeoGuessd/data/world.geojson";
 
 // call funcs
 createMap();
@@ -69,7 +70,7 @@ async function createMap() {
     .scale(w / 1.8 / Math.PI)
     .translate([w / 2, h / 2])
 
-  d3.json("../data/world.geojson").then(function (data) {
+  d3.json(mapInfoFile).then(function (data) {
     svg.append("g").attr("id", "path-grp")
       .selectAll("path")
       .data(data.features)
